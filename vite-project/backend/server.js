@@ -26,6 +26,8 @@ app.get('/api/tables', async (req, res) => {
   }
 });
 
+
+
 // API route to fetch table data
 app.get('/api/table/:tableName', async (req, res) => {
   const tableName = req.params.tableName;
