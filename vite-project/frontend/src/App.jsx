@@ -46,13 +46,14 @@ function App() {
 
   return (
     <div className='main-wrapper'>
-      <h2>Choose your table</h2>
+      <p>Choose your table</p>
       <br />
       {tableOptions.length === 0 ? (
         <p>No available tables</p>
       ) : (
         <>
           <select value={selectedTable} onChange={handleTableSelect}>
+          <option value="none" defaultValue={"Select an Option"} hidden>Select an Option</option>
             {tableOptions.map((table) => (
               <option key={table} value={table}>
               {table}
